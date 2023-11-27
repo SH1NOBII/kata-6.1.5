@@ -1,0 +1,39 @@
+.aside-menu-container {
+  position: fixed;
+  overflow: scroll;
+  display: none;
+  flex-direction: column;
+  top: 0px;
+  left: 0px;
+  width: 320px;
+  height: 100vh;
+  z-index: 10;
+  background-color: #fff;
+  box-shadow: 12px 0px 40px 0px rgba(14, 24, 80, 0.5);
+}
+
+.aside-menu {
+  display: flex;
+  flex-direction: column;
+  padding: 18px 24px 32px 24px;
+  height: 95%;
+  justify-content: space-between;
+
+  &____header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 46px;
+  }
+
+  &____logo {
+    margin-left: -40px;
+  }
+
+  &__footer-nav {
+    display: flex;
+    margin-bottom: 16px;
+  }
+}
