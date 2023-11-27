@@ -1,7 +1,12 @@
+.aside-menu--active {
+  display: block;
+  transform: translateX(0);
+}
+
 .aside-menu-container {
   position: fixed;
   overflow: scroll;
-  // display: none;
+  display: none;
   flex-direction: column;
   top: 0px;
   left: 0px;
@@ -24,7 +29,7 @@
     text-decoration: none;
   }
 
-  &____header {
+  &__header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -33,7 +38,7 @@
     margin-bottom: 46px;
   }
 
-  &____logo {
+  &__logo {
     margin-left: -40px;
   }
 
@@ -67,6 +72,10 @@
     &:hover::before {
       display: block;
     }
+
+    &:hover {
+      font-weight: 600;
+    }
   }
 
   &__footer-item {
@@ -93,5 +102,9 @@
     li a:hover {
       opacity: 0.5;
     }
+  }
+
+  .icon:hover {
+    opacity: 0.5;
   }
 }
