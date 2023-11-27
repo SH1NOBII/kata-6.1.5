@@ -9,7 +9,7 @@
   align-items: center;
   padding-top: 20px;
 
-  &__mobile-divider {
+  .divider {
     width: 2px;
     height: 32px;
     border-radius: 1px;
@@ -19,16 +19,18 @@
 
 @media screen and (min-width: $tabWidth) {
   .header-navigation {
-    .visability {
-      display: block;
-    }
-
+    // DECORATION ELEMENT
     &__mobile-divider--visability {
       display: none;
     }
+    /////////////////////////
 
     &__main-logo {
       margin-right: 33%;
+    }
+
+    .visability {
+      display: block;
     }
   }
 }
