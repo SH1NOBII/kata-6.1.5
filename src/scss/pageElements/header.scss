@@ -1,0 +1,40 @@
+.header-container {
+  width: auto;
+  height: 88px;
+}
+
+.header-navigation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 20px;
+
+  &__mobile-divider {
+    width: 2px;
+    height: 32px;
+    border-radius: 1px;
+    background: $lightGrey;
+  }
+}
+
+@media screen and (min-width: $tabWidth) {
+  .header-navigation {
+    .visability {
+      display: block;
+    }
+
+    &__mobile-divider--visability {
+      display: none;
+    }
+
+    &__main-logo {
+      margin-right: 33%;
+    }
+  }
+}
+
+@media screen and (min-width: $desktopWidth) {
+  .header-container {
+    display: none;
+  }
+}
