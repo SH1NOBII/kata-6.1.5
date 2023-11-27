@@ -1,7 +1,7 @@
 .aside-menu-container {
   position: fixed;
   overflow: scroll;
-  display: none;
+  // display: none;
   flex-direction: column;
   top: 0px;
   left: 0px;
@@ -19,6 +19,11 @@
   height: 95%;
   justify-content: space-between;
 
+  a {
+    color: #1b1c21;
+    text-decoration: none;
+  }
+
   &____header {
     display: flex;
     flex-direction: row;
@@ -35,5 +40,58 @@
   &__footer-nav {
     display: flex;
     margin-bottom: 16px;
+  }
+
+  &__item {
+    .item__link {
+      display: block;
+      padding-bottom: 32px;
+      align-items: center;
+      color: #000;
+      transition: color 0.4s ease;
+    }
+
+    &::before {
+      content: '';
+      width: 4px;
+      height: 32px;
+      border-left: 4px solid #41f6d7;
+      border-radius: 8px;
+      position: absolute;
+      left: 0px;
+      transform: translateY(-15%) rotate(180deg);
+      transition: left 0.6s ease;
+      display: none;
+    }
+
+    &:hover::before {
+      display: block;
+    }
+  }
+
+  &__footer-item {
+    margin-right: 16px;
+  }
+
+  &__contact-email {
+    display: block;
+    margin-bottom: 12px;
+  }
+
+  &__contact_phone {
+    display: block;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+
+  &__lang {
+    display: flex;
+    li:not(:last-child) {
+      margin-right: 7px;
+    }
+    li a:hover {
+      opacity: 0.5;
+    }
   }
 }
