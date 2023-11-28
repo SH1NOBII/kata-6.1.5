@@ -474,6 +474,11 @@ li {
   opacity: 0.5;
 }
 
+.aside-menu--active {
+  display: block;
+  transform: translateX(0);
+}
+
 .title-container {
   margin-bottom: 24px;
   display: flex;
@@ -772,6 +777,23 @@ li {
 
 .background-grey {
   background: #f8f8f8;
+}
+
+.prices__table-content {
+  padding-left: 40px;
+}
+
+.prices__table-title {
+  display: flex;
+}
+
+.table-item__content {
+  display: flex;
+  justify-content: space-between;
+}
+.table-item__content .content-item {
+  width: 25%;
+  padding: 20px;
 }
 /**
  * Swiper 11.0.5
