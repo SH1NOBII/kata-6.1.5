@@ -664,26 +664,6 @@ li {
   padding: 16px;
 }
 
-/* .brands-swiper__swiper-card {
-  padding: 20px 16px;
-  min-width: 224px;
-  min-height: 72px;
-  max-height: 72px; */
-/* width: 70%; */
-/* background-color: aquamarine; */
-/* height: 40px; */
-/* margin-right: 16px; */
-/* width: 240px;
-  height: 72px; */
-/* flex-shrink: 0;
-  border-radius: 6px;
-  border: 1px solid #EAEAEA;
-  background: #FFF;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-} */
 .swiper-card {
   padding: 20px 16px;
   min-width: 224px;
@@ -698,11 +678,6 @@ li {
   align-items: center;
 }
 
-/* .brands-swiper {
- padding: 30px 0 70px 0;
- width: 300px;
- height: 300px;
-} */
 .swiper-wrapper {
   margin-bottom: 16px;
   padding-left: 16px;
@@ -717,9 +692,6 @@ li {
   text-align: center;
 }
 
-/* .brands-swiper__swiper-card--brand-logo {
-
-} */
 .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
