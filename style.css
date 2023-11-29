@@ -933,6 +933,9 @@ li {
     justify-content: center;
   }
 }
+.background-grey {
+  background: #f8f8f8;
+}
 /**
  * Swiper 11.0.5
  * Most modern mobile touch slider and framework with hardware accelerated transitions
