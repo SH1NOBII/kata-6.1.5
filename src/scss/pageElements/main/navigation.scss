@@ -20,6 +20,17 @@
   display: none;
   align-items: center;
 
+  span {
+    color: #1b1c21;
+    text-align: right;
+    font-family: TTLakesCondensed-Medium;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    padding-top: 10px;
+  }
   &__repair-btn {
     display: flex;
     align-items: center;
@@ -48,6 +59,36 @@
   list-style: none;
   overflow-x: scroll;
   margin-bottom: 12px;
+
+  &__section-element {
+    overflow-wrap: normal;
+    white-space: nowrap;
+    color: #7e7e82;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    margin-left: 16px;
+    border: 2px solid transparent;
+    padding-top: 8px;
+    padding-right: 9px;
+    padding-bottom: 8px;
+    padding-left: 17px;
+
+    &:hover {
+      border-radius: 6px;
+      border-color: #b8ffec;
+      background: #fff;
+    }
+  }
+}
+
+.menu::-webkit-scrollbar {
+  width: 0;
+}
+
+@media screen and (min-width: $tabWidth) {
 }
 
 @media screen and (min-width: $desktopWidth) {

@@ -1,0 +1,55 @@
+.prices__table-container {
+}
+
+.prices__table-content {
+  padding-left: 40px;
+}
+
+.prices__table-title {
+  display: flex;
+}
+
+.table-item__content {
+  display: flex;
+  justify-content: space-between;
+  .content-item {
+    width: 25%;
+    padding: 20px;
+  }
+}
+
+// .service-table {
+//   &__item {
+//     width: 25%;
+//   }
+// }
+
+// .service-table__line {
+//   padding: 16px 24px;
+
+//   &--table {
+//     position: relative;
+//     display: flex;
+//     gap: 1rem;
+
+//     .service-button {
+//       display: flex;
+//       align-items: center;
+//       text-transform: uppercase;
+//       padding: 9px 40px 9px 13px;
+//       letter-spacing: 0.15px;
+//       margin-left: auto;
+//       border-radius: 16px;
+//       background: #ff3e79;
+//       border: none;
+//       color: #fff;
+//       background-color: #ff3e79;
+//       border-radius: 16px;
+//       transition: 0.2s color, 0.2s background-color;
+//     }
+//   }
+// }
+
+// .service__arrow {
+//   fill: #000000;
+// }
