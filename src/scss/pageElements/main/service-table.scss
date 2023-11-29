@@ -7,6 +7,20 @@
 
 .prices__table-title {
   display: flex;
+  padding-left: 40px;
+}
+
+.fourth-content-item {
+  .button-order {
+    display: flex;
+    padding: 10px 40px 9px 13px;
+    color: #fff;
+    background-color: #ff3e79;
+    border-radius: 16px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+  }
 }
 
 .table-item__content {
@@ -16,6 +30,11 @@
     width: 25%;
     padding: 20px;
   }
+}
+
+.prices__item-title {
+  width: 25%;
+  padding: 20px;
 }
 
 // .service-table {

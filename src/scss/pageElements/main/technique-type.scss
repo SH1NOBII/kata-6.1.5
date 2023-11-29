@@ -1,3 +1,122 @@
+@media screen and (min-width: 768px) {
+  .technique-type-swiper.swiper {
+    display: none;
+  }
+}
+
+@media screen and (min-width: $desktopWidth) {
+  .technique-type .swiper-card {
+    max-width: 240px;
+  }
+}
+
+.technique-type__title--background {
+  flex-shrink: 0;
+  background: linear-gradient(270deg, #f8f8f8 0%, #fff 98.61%);
+  margin-bottom: 16px;
+}
+
+.technique-type__title {
+  color: #7e7e82;
+  font-family: TTLakes-Regular;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.2px;
+  text-transform: uppercase;
+  padding: 16px;
+}
+
+.technique-type-swiper__swiper-wrapper {
+  /* padding: 30px; */
+  min-height: 100%;
+}
+
+.technique-type-swiper__swiper-slide {
+  text-align: center;
+}
+
+.technique-type__grid-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  -moz-column-gap: 24px;
+  column-gap: 24px;
+  row-gap: 16px;
+  margin-bottom: 24px;
+  display: none;
+  padding: 0 24px;
+}
+
+.technique-type__more-button {
+  align-items: center;
+  margin-left: 16px;
+  background: none;
+  border: none;
+  padding: 0;
+  margin-bottom: 34px;
+  display: none;
+}
+
+.technique-type__more-button-text {
+  color: #1b1c21;
+  font-family: TTLakes-Regular;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  vertical-align: top;
+}
+
+.technique-type .swiper-card {
+  min-height: 160px;
+  // max-width: 240px;
+}
+
+.technique-type__item:not(:nth-child(-n + 4)) {
+  display: none;
+}
+
+@media screen and (max-width: 1119px) {
+  .technique-type__item:not(:nth-child(-n + 3)) {
+    display: none;
+  }
+}
+
+@media screen and (width > 767px) {
+  .technique-type__grid-block {
+    display: grid;
+  }
+}
+
+@media screen and (width > 1119px) {
+  .technique-type__grid-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .technique-type__more-button {
+    display: block;
+  }
+}
+
+.technique-type__item--opened {
+  display: list-item !important;
+}
+
+.technique-type-swiper__card-title {
+  align-self: flex-start;
+  color: #1b1c21;
+}
+
+.technique-type-swiper__card-btn {
+  align-self: flex-end;
+  // margin-left: auto;
+}
+
 // .type-technique__item {
 //   @media screen and (min-width: 700px) {
 //     display: none;

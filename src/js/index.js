@@ -3,5 +3,6 @@ import '../scss/style.scss';
 import '../js/swiper.js';
 import '../js/brand-more-button.js';
 import '../js/aside-menu.js';
+import './technique-type-more-button.js';
 
 console.log('Works!');
