@@ -743,10 +743,6 @@ li {
   display: none;
 }
 
-.background-grey {
-  background: #f8f8f8;
-}
-
 @media screen and (min-width: 768px) {
   .technique-type-swiper.swiper {
     display: none;
