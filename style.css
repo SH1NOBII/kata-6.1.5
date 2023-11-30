@@ -479,12 +479,12 @@ li {
 
 @media (min-width: 1440px) {
   .aside-menu-container {
-    display: block;
+    left: 0;
     position: relative;
     box-shadow: none;
   }
   .aside-menu-container .btn-close-burger {
-    display: none;
+    left: -390px;
   }
 }
 @media screen and (min-width: 390px) {
