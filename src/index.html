@@ -90,7 +90,7 @@
           <div class="aside-menu__footer">
             <ul class="aside-menu__footer-nav">
               <li class="aside-menu__footer-item">
-                <button class="icon">
+                <button class="header-navigation__call">
                   <img src="img/control-icons/call.svg" alt="" />
                 </button>
               </li>
@@ -973,7 +973,48 @@
           </div>
         </footer>
       </main>
-      <div class="sidebar"> </div>
+      <div class="sidebar-call">
+        <div class="sidebar-call__container">
+          <button class="sidebar-call__close-button" type="button">
+            <img src="img/control-icons/burger-close.svg" alt="" />
+          </button>
+          <div class="sidebar-call-title-container">
+            <img
+              class="sidebar-call-title-container__decor-img"
+              src="img/decoration/highlight.svg"
+            />
+            <h1 class="sidebar-call-title-container__text">Обратный звонок</h1>
+          </div>
+
+          <form class="sidebar-call__form">
+            <div class="sidebar-call__form-container">
+              <div class="sidebar-call__field">
+                <input
+                  class="phone-input"
+                  type="tel"
+                  id="tel"
+                  placeholder="Телефон"
+                />
+              </div>
+              <div class="agreement-block">
+                <p class=""
+                  >Нажимая “отправить”, вы даете согласие на
+                  <a class="agreement-link" href="#"
+                    >обработку персональных данных</a
+                  >
+                  и соглашаетесь с нашей
+                  <a class="agreement-link" href="#"
+                    >политикой конфиденциальности</a
+                  ></p
+                >
+              </div>
+              <button type="submit" class="button-order">
+                <span>Отправить</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
   </body>
 </html>
