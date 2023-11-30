@@ -819,7 +819,7 @@ li {
 }
 
 .technique-type .swiper-card {
-  min-height: 160px;
+  min-height: 120px;
 }
 
 .technique-type__item:not(:nth-child(-n+4)) {
@@ -864,6 +864,10 @@ li {
   font-size: 14px;
   text-wrap: nowrap;
 }
+.service-prices .swiper-card {
+  min-width: 220px;
+  min-height: 160px;
+}
 
 .prices__table-container {
   padding: 0 24px;
@@ -881,6 +885,18 @@ li {
 .first-content-item span,
 .first-column span {
   text-wrap: nowrap;
+}
+
+.service-prices-swiper__swiper-card.swiper-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.time-btn-block {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 
 .second-column,
@@ -916,7 +932,7 @@ li {
   color: #7e7e82;
 }
 
-.fourth-content-item .button-order {
+.button-order {
   display: flex;
   padding: 10px 40px 9px 13px;
   color: #fff;
@@ -949,6 +965,11 @@ li {
 @media (min-width: 768px) {
   .prices__table-container {
     display: block;
+  }
+}
+@media screen and (min-width: 768px) {
+  .service-prices-swiper.swiper {
+    display: none;
   }
 }
 body {
