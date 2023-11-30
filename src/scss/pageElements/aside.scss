@@ -116,12 +116,12 @@
 
 @media (min-width: $desktopWidth) {
   .aside-menu-container {
-    display: block;
+    left: 0;
     position: relative;
     box-shadow: none;
 
     .btn-close-burger {
-      display: none;
+      left: -390px;
     }
   }
 }
