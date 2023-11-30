@@ -1,7 +1,6 @@
 .aside-menu-container {
   position: fixed;
   overflow: scroll;
-  display: none;
   flex-direction: column;
   top: 0px;
   left: -100%;
@@ -108,7 +107,6 @@
 }
 
 .aside-menu--active {
-  display: block;
   left: 0;
   box-shadow: 12px 0px 40px 0px rgba(14, 24, 80, 0.5);
 }
@@ -118,7 +116,6 @@
     left: 0;
     position: relative;
     box-shadow: none;
-    display: block;
 
     .btn-close-burger {
       display: none;

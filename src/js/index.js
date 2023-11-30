@@ -5,5 +5,7 @@ import '../js/brand-more-button.js';
 import '../js/aside-menu.js';
 import './technique-type-more-button.js';
 import './sidebar-call.js';
+import './sidebar-feedback.js';
+import './more-button.js';
 
 console.log('Works!');
