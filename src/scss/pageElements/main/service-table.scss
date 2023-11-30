@@ -1,6 +1,11 @@
 .service-prices {
   font-size: 14px;
   text-wrap: nowrap;
+
+  .swiper-card {
+    min-width: 220px;
+    min-height: 160px;
+  }
 }
 
 .prices__table-container {
@@ -19,6 +24,18 @@
   span {
     text-wrap: nowrap;
   }
+}
+
+.service-prices-swiper__swiper-card.swiper-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.time-btn-block {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 
 .second-column,
@@ -54,23 +71,22 @@
   color: $gray;
 }
 
-.fourth-content-item {
-  .button-order {
-    display: flex;
-    padding: 10px 40px 9px 13px;
-    color: #fff;
-    background-color: #ff3e79;
-    border-radius: 16px;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 700;
-    background-image: url(../img/decoration/prices-icon.svg);
-    background-repeat: no-repeat;
-    background-position: bottom 12px right 16px;
-    text-transform: uppercase;
-    margin-left: auto;
-  }
+.button-order {
+  display: flex;
+  padding: 10px 40px 9px 13px;
+  color: #fff;
+  background-color: #ff3e79;
+  border-radius: 16px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  background-image: url(../img/decoration/prices-icon.svg);
+  background-repeat: no-repeat;
+  background-position: bottom 12px right 16px;
+  text-transform: uppercase;
+  margin-left: auto;
 }
+
 //
 .table-item__content {
   display: flex;
@@ -89,6 +105,12 @@
 @media (min-width: $tabWidth) {
   .prices__table-container {
     display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .service-prices-swiper.swiper {
+    display: none;
   }
 }
 
