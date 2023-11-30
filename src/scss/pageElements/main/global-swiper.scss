@@ -17,18 +17,23 @@
   padding-left: 16px;
 }
 
-.swiper-pagination {
+.brands .swiper-pagination,
+.technique-type .swiper-pagination,
+.service-prices .swiper-pagination {
   position: relative;
+  margin-top: 16px;
 }
 
 .technique-type-swiper .swiper-pagination-bullet,
-.brands-swiper .swiper-pagination-bullet {
+.brands-swiper .swiper-pagination-bullet,
+.service-prices-swiper .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: #dddddd;
 }
 
 .technique-type-swiper .swiper-pagination-bullet,
-.brands-swiper .swiper-pagination-bullet {
+.brands-swiper .swiper-pagination-bullet,
+.service-prices-swiper .swiper-pagination-bullet {
   background-color: #b5b6bc;
 }

@@ -38,6 +38,23 @@
   width: 100%;
 }
 
+.service-card-content__title {
+  color: $gray;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px; /* 114.286% */
+}
+
+.service-card-content__text {
+  color: $black;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 128.571% */
+  letter-spacing: 0.2px;
+}
+
 .second-column,
 .third-column,
 .second-content-item,
@@ -45,7 +62,7 @@
   text-align: center;
 }
 
-.service-prices_title--background {
+.service-prices__title--background {
   flex-shrink: 0;
   background: linear-gradient(270deg, #f8f8f8 0%, #fff 98.61%);
   margin-bottom: 16px;
@@ -100,6 +117,26 @@
 .prices__item-title {
   width: 25%;
   padding: 20px 10px;
+}
+
+.service-footer {
+  max-width: 421px;
+  text-wrap: wrap;
+  margin-bottom: 16px;
+  padding: 24px 20px;
+
+  &__text {
+    margin-bottom: 16px;
+  }
+
+  &__btn {
+    color: $black;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.2px;
+  }
 }
 
 @media (min-width: $tabWidth) {
