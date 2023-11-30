@@ -3,7 +3,7 @@ const dropDown = document.querySelector('.aside-menu-container');
 const menuClose = document.querySelector('.btn-close-burger ');
 const headerContainer = document.querySelector('.header-container');
 const mainContainer = document.querySelector('.main-wrapper');
-const appWidth = document.body.clientWidth;
+const appWidth = window.innerWidth;
 
 burgerMenu.addEventListener('click', () => {
   dropDown.classList.add('aside-menu--active');
@@ -17,13 +17,13 @@ menuClose.addEventListener('click', () => {
   mainContainer.style.filter = 'blur(0px)';
 });
 
-if (appWidth < 1440) {
-  mainContainer.addEventListener('click', () => {
+mainContainer.addEventListener('click', () => {
+  if (appWidth < 1440) {
     dropDown.classList.remove('aside-menu--active');
     headerContainer.style.filter = 'blur(0px)';
     mainContainer.style.filter = 'blur(0px)';
-  });
-}
+  }
+});
 
 // document.addEventListener('click', (env) => {
 //   const click = env.composedPath().includes(dropDown);
