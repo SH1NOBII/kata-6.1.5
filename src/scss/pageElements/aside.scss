@@ -15,6 +15,10 @@
   z-index: 10;
   background-color: #fff;
   box-shadow: 12px 0px 40px 0px rgba(14, 24, 80, 0.5);
+
+  &::-webkit-scrollbar {
+    width: 0;
+  }
 }
 
 .aside-menu {
@@ -112,4 +116,16 @@
 .aside-menu--active {
   display: block;
   transform: translateX(0);
+}
+
+@media (min-width: $desktopWidth) {
+  .aside-menu-container {
+    display: block;
+    position: relative;
+    box-shadow: none;
+
+    .btn-close-burger {
+      display: none;
+    }
+  }
 }
