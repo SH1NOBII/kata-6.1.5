@@ -746,6 +746,10 @@ li {
   display: none;
 }
 
+.brand__grid-block-card:hover {
+  border-color: #ff3e79;
+}
+
 @media screen and (min-width: 768px) {
   .technique-type-swiper.swiper {
     display: none;
@@ -756,6 +760,11 @@ li {
     max-width: 240px;
   }
 }
+.technique-type__grid-block-card:hover {
+  background-color: #41f6d6;
+  transition: background-color 0.5s ease-out;
+}
+
 .technique-type__title--background {
   flex-shrink: 0;
   background: linear-gradient(270deg, #f8f8f8 0%, #fff 98.61%);
@@ -968,6 +977,9 @@ li {
   width: 25%;
   padding: 20px 10px;
 }
+.table-item__content:hover {
+  background-color: #ff3e79;
+}
 
 .prices__item-title {
   width: 25%;
@@ -1161,10 +1173,6 @@ body {
 @media screen and (min-width: 1440px) {
   .sidebar-call__container {
     width: 440px;
-  }
-  .sidebar-call__close-button {
-    padding: 0;
-    position: absolute;
   }
 }
 .sidebar-feedback__container {
